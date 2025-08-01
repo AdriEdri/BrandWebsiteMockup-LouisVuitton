@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="log in.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+ <header class="header">
+    <div class="logo">
+        <a href="index.html"><img src="assets/logo louis vuitton remake.png" alt="Louis Vuitton Logo"></a>
+    </div>
+    <div class="brand-name">
+        <h1>LOUIS VUITTON</h1>
+    </div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+    <label for="menu-toggle" class="menu-toggle-label">&#9776;</label>
+    <nav id="menu" class="sidenav">
+        <label for="menu-toggle" class="close-btn">&times;</label>
+        <a href="Louis Vuitton remake.html">Home</a>
+        <a href="products.html">Product</a>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="search-bar">
+        <span class="search-icon material-symbols-outlined">search</span>
+        <input class="search-input" type="search" placeholder="Search...">
+    </div>
+</header>
+    <div class="title">
+        <h1>SIGN IN</h1>
+        <p>Sign in to get special benefit!</p>
+    </div>
+    <div class="login-container">
+        <h2>Sign In</h2>
+        <form action="/login" method="POST">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <div class="contact">
+        <p>Want to contact us?</p>
+        <a href="contact.html"><button>Go to contact</button></a>
+    </div>
+    <footer class="copyright">
+        <ul>
+            <li><a href="products.html">Products</a></li>
+            <hr>
+            <li><a href="">About&nbsp;us</a></li>
+            <hr> 
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p>&copy; 2024 Louis Vuitton. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,237 @@
+/* styling */
+
+@font-face {
+   font-family: montserrat;
+   src: url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap);
+}
+
+/* background */
+body {
+    background-color: #efdecd;
+    width: 60%;
+    font-family: montserrat;
+    overflow-x: hidden;
+    height: 100px;
+    cursor: default;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 1530px;
+    height: 200px; 
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: -10px;
+    background-color: #bb9679;
+    position: relative;
+}
+
+/* Logo styling */
+.logo img {
+    height:100pxpx; 
+}
+
+/* Brand name styling */
+.brand-name {
+    flex-grow: 1;
+    text-align: center;
+    position: relative;
+    right: 200px;
+}
+
+/* Search bar styling */
+.search-bar {
+    --padding: 14px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: var(--padding);
+    border-radius: 28px;
+    background: #f6f6f6;
+    width: 600px;
+    position: relative;
+    right:200px;
+}
+
+.search-input {
+  font-size: 16px;
+  color: #333333;
+  margin-left: var(--padding);
+  outline: none;
+  border: none;
+  background: transparent;
+  flex: 1;
+
+}
+
+.search-input::placeholder,
+.search-icon {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+/* Menu hide */
+.menu-toggle-checkbox {
+    display: none;
+}
+
+/* Menu hamburger icon */
+.menu-toggle-label {
+    font-size: 35px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    left: 540px;
+    bottom: 4px;
+}
+
+/* Side nav bar styling */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: left 0.3s ease;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+/* nav text styling*/
+.sidenav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+/* make the nav text brighter */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Close button styling */
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+/* Show sidenav */
+.menu-toggle-checkbox:checked ~ .sidenav {
+    left: 0;
+}
+
+/* for smaller screens */
+@media (max-width: 768px) {
+    .sidenav {
+        width: 100%;
+    }
+}
+
+.title {
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    left: 290px;
+}
+
+.login-container {
+    width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: 300px;
+    margin: 80px auto; 
+}
+
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #003344;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003366;
+}
+
+.contact {
+    text-align: center;
+    position: relative;
+    left: 290px;
+}
+
+.contact button {
+    background-color: #003366;
+    color: white;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+
+.contact button:hover {
+    transform: translateY(1px);
+    background-color: #007799; 
+}
+
+.copyright {
+    background-color: #bb9679;
+    padding: 25px 650px;
+    width: 215px;
+    position: relative;
+    right: 10px;
+    top: 10px;
+    text-align: center;
+}
+
+.copyright ul {
+    display: flex;
+    list-style: none;
+    position: relative;
+    right: 100px;
+
+}
+
+.copyright li {
+    padding: 15px;
+    text-align: center;
+}

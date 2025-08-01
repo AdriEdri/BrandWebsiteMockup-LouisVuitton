@@ -1,0 +1,522 @@
+/* Homepage styling */
+
+@font-face {
+   font-family: montserrat;
+   src: url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap);
+}
+
+* {
+    font-family: montserrat;
+}
+body {
+    background-color: #efdecd;
+    width: 60%;
+    overflow-x: hidden;
+    height: 100px;
+    cursor: default;
+}
+
+/*header styling*/
+.header {
+    display: flex;
+    align-items: center;
+    width: 1515px;
+    height: 200px; 
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: -10px;
+    background-color: #bb9679;
+    position: relative;
+}
+
+/* Logo styling */
+.logo img {
+    height:100pxpx; 
+}
+
+/* Brand name styling */
+.brand-name {
+    flex-grow: 1;
+    text-align: center;
+    position: relative;
+    right: 200px;
+}
+
+/* Search bar styling */
+.search-bar {
+    --padding: 14px;
+    width: max-content;
+    display: flex;\]
+    align-items: center;
+    padding: var(--padding);
+    border-radius: 28px;
+    background: #f6f6f6;
+    width: 600px;
+    position: relative;
+    right:200px;
+}
+
+/*search bar content styling*/
+.search-input {
+  font-size: 16px;
+  color: #333333;
+  margin-left: var(--padding);
+  outline: none;
+  border: none;
+  background: transparent;
+  flex: 1;
+
+}
+
+.search-input::placeholder,
+.search-icon {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+/* Menu hide */
+.menu-toggle-checkbox {
+    display: none;
+}
+
+/* Menu hamburger icon */
+.menu-toggle-label {
+    font-size: 35px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    left: 540px;
+    bottom: 4px;
+}
+
+/* Side navigation menu styling */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px; 
+    background-color: #111;
+    overflow-x: hidden;
+    transition: left 0.3s ease;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+
+/* nav text styling*/
+.sidenav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Close button styling */
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+/* Show sidenav */
+.menu-toggle-checkbox:checked ~ .sidenav {
+    left: 0;
+}
+
+/* for smaller screens */
+@media (max-width: 768px) {
+    .sidenav {
+        width: 100%;
+    }
+}
+
+/* big titleee*/
+.p {
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    left: 290px;
+}
+
+/*banner*/
+.intro{
+  position: relative;
+}
+
+/*banner img*/
+.intro img {
+  width: 1600px;
+  height: 300px;
+  position: relative;
+  top: 50px;
+  right: 10px;
+  opacity: 0.6;
+}
+
+/*banner text all*/
+.intro-text {
+  font-size: 20px;
+  position: absolute;
+  top: 180px;
+  left: 595px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/*banner text quote*/
+.intro-text p {
+    text-align: center;
+  font-size: 30px;
+  position: relative;
+  bottom: 130px;
+  color: white;
+}
+
+/*banner text yang ada Louis Vuitton*/
+.intro-text h1 {
+  font-size: 70px;
+  position: relative;
+  text-align: center;
+  bottom: 100px;
+  color: white;
+}
+
+/*actual intro*/
+.main-content {
+    position: relative;
+    top: 100px;
+}
+
+.main-content h1 {
+    text-align: center;
+    font-size: 45px;
+    position: relative;
+}
+
+.main-content img {
+    width: 390px;
+    border-radius: 19px;
+    box-shadow: 0px 0px 5px 0px black;
+    position: relative;
+    left: 20px;
+}
+
+.text {
+    text-align: center;
+    position: relative;
+    left: 500px;
+    bottom: 450px;
+}
+
+.text button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+
+.text button:hover {
+    transform: translateY(1px);
+    background-color: #007799; 
+}
+
+/* Featured Products */
+
+/* title new arrival*/
+.tfp h1 {
+    font-size: 45px;
+    text-align: center;
+    position: relative;
+    left: 300px;
+    padding-top: 20px;
+    margin-top: 100px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    margin: 50px 0px 50px 550px;
+    padding: 0;
+    margin-bottom: 200px;
+}
+
+.na {
+    position: absolute;
+    top: 14px; 
+    left: 0px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px; 
+    transform: rotate(-45deg); 
+    z-index: 1; /* nampak */  
+}
+
+.content {
+    flex: 1 1 300px; 
+    max-width: 300px;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 20px;
+    cursor: default;
+    padding: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: box-shadow 0.4s, transform 0.4s;
+    background: white;
+    position: relative; 
+    left: 15px;
+}
+
+/* nampak kene tekan*/
+.content:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translateY(-8px);
+}
+
+/*product img for cards*/
+.content img {
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+}
+.gallery img {
+    width: 100%;
+    height: auto; 
+    max-width: 200px;
+    display: block;
+
+}
+
+.gallery p {
+    text-align: center;
+    color: #b2bec3;
+    padding: 10px;
+}
+
+.gallery h6 {
+    font-size: 26px;
+    text-align: center;
+    color: #222f3e;
+    margin: 0;
+}
+
+.gallery ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.gallery li {
+    padding: 5px;
+}
+
+/*untuk star*/
+.gallery .fa {
+    font-size: 26px;
+    transition: color 0.4s;
+    margin: 3px;
+}
+
+.gallery .checked {
+    color: #ff9f43;
+}
+
+/*button see more*/
+.gallery button {
+    background-color: lightgray;
+    width: 100%;
+    margin: ;
+    padding: 15px;
+    border: none;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+
+.gallery button:hover {
+    transform: translateY(1px);
+    background-color: #ececec; 
+}
+
+/* Latest News Section */
+.latest-news {
+    text-align: center;
+    position: relative;
+    left: 270px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.latest-news h1 {
+    font-size: 45px;
+    margin: 0;
+}
+
+/* Updated Newest Posts Section */
+.newest-posts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.post {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    max-width: 340px;
+    position: relative;
+    left: 280px;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.post-content {
+    padding: 15px;
+}
+
+.post-content h2 {
+    font-size: 20px; 
+    margin: 0 0 10px;
+}
+
+.post-content p {
+    font-size: 16px; 
+    color: #666;
+    margin: 0;
+}
+
+.rw {
+    text-align: center;
+    position: relative;
+    left: 270px;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 23px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffefd5;
+    width: 1600px;
+    justify-content: center; 
+    position: relative;
+    right: 25px;
+}
+
+.box {
+    width: 1000px;
+    height: 150px;
+    background-color: white;
+    padding: 20px 30px;
+    margin: 10px; 
+    text-align: center;
+    border-radius: 5px;
+    margin-left: auto; 
+    margin-right: auto;
+    position: relative;
+    right: 65px;
+}
+
+/*title products*/
+.tp h1 {
+    font-size: 45px;
+    text-align: center;
+    position: relative;
+    left: 280px;
+    padding-top: 20px;
+    margin-top: 100px;
+}
+
+/* title leather goods*/
+.t h1 {
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    left: 290px;
+    margin-top: 10px;
+}
+.copyright {
+    background-color: #bb9679;
+    padding: 25px 650px;
+    width: 215px;
+    position: relative;
+    right: 10px;
+    top: 10px;
+    text-align: center;
+}
+
+.copyright ul {
+    display: flex;
+    list-style: none;
+    position: relative;
+    right: 100px;
+
+}
+
+.copyright li {
+    padding: 15px;
+    text-align: center;
+}
+
+/* (not so) Responsive Design */
+@media (max-width: 1200px) {
+    .content {
+        flex: 1 1 45%; /* tablet */
+    }
+
+    .post {
+        width: calc(50% - 20px);
+        position: relative;
+        right: 160px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .sidenav {
+        display: none;
+    }
+
+        .post {
+        width: calc(100% - 20px);
+        position: relative;
+        right: 210px;
+    }
+}

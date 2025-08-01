@@ -1,0 +1,393 @@
+/* styling */
+
+@font-face {
+   font-family: montserrat;
+   src: url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap);
+}
+
+/* background */
+body {
+    background-color: #efdecd;
+    width: 60%;
+    font-family: montserrat;
+    overflow-x: hidden;
+    height: 100px;
+    cursor: default;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 1515px;
+    height: 200px; 
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: -10px;
+    background-color: #bb9679;
+    position: relative;
+}
+
+/* Logo styling */
+.logo img {
+    height:100pxpx; 
+}
+
+/* Brand name styling */
+.brand-name {
+    flex-grow: 1;
+    text-align: center;
+    position: relative;
+    right: 200px;
+}
+
+/* Search bar styling */
+.search-bar {
+    --padding: 14px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: var(--padding);
+    border-radius: 28px;
+    background: #f6f6f6;
+    width: 600px;
+    position: relative;
+    right:200px;
+}
+
+.search-input {
+  font-size: 16px;
+  color: #333333;
+  margin-left: var(--padding);
+  outline: none;
+  border: none;
+  background: transparent;
+  flex: 1;
+
+}
+
+.search-input::placeholder,
+.search-icon {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+/* Menu hide */
+.menu-toggle-checkbox {
+    display: none;
+}
+
+/* Menu hamburger icon */
+.menu-toggle-label {
+    font-size: 35px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    left: 540px;
+    bottom: 4px;
+}
+
+/* Side nav bar styling */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: left 0.3s ease;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+/* nav text styling*/
+.sidenav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+/* make the nav text brighter */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Close button styling */
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+/* Show sidenav */
+.menu-toggle-checkbox:checked ~ .sidenav {
+    left: 0;
+}
+
+/* for smaller screens */
+@media (max-width: 768px) {
+    .sidenav {
+        width: 100%;
+    }
+}
+
+.title {
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    left: 290px;
+}
+
+.container button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+
+.container button:hover {
+    transform: translateY(1px);
+    background-color: #003399;    
+}
+
+.top {
+    position: relative;
+    right: 4%;
+}
+
+.call {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    border: 3px, solid black;
+    padding: 32px 50px;
+    border-radius: 20px;
+    position: relative;
+    top: 6px;
+    left: 290px;
+}
+
+.mail {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    border: 3px, solid black;
+    padding: 35px 70px;
+    border-radius: 20px;
+    position: relative;
+    top: 12px;
+    left: 390px;
+}
+
+.ig {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    border: 3px, solid black;
+    padding: 26px 62px;
+    border-radius: 20px;
+    position: relative;
+    top: 30px;
+    left: 490px;
+}
+
+.bottom {
+    position: relative;
+    top: 50px;
+    right: 4%;
+    margin-bottom: 100px;
+}
+
+.twitter {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    border: 3px, solid black;
+    padding: 27px 70px;
+    border-radius: 20px;
+    position: relative;
+    top: 12px;
+    left: 290px;
+}
+
+.fb {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    border: 3px, solid black;
+    padding: 27px 64px;
+    border-radius: 20px;
+    position: relative;
+    top: 12px;
+    left: 390px;
+}
+
+.fb img {
+    border-radius: 20px;
+}
+
+.tt {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    border: 3px, solid black;
+    padding: 27px 72px;
+    border-radius: 20px;
+    position: relative;
+    top: 10px;
+    left: 490px;
+}
+
+.tt img {
+    width: 86px;
+}
+
+.copyright {
+    background-color: #bb9679;
+    padding: 25px 650px;
+    width: 220px;
+    position: relative;
+    right: 10px;
+    top: 10px;
+}
+
+.FAQ {
+    font-size: 30px;
+    margin-top: 150px;
+    text-align: center;
+    position: relative;
+    left: 290px;
+    max-width: 100%;
+    overflow: visible; 
+}
+
+
+.faq-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow-x: hidden;
+    position: relative;
+    left: 285px;
+
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow-x: hidden;
+}
+
+.faq-question {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: #f9f9f9;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    border: none;
+    text-align: left;
+    transition: background 0.3s ease;
+    overflow-x: hidden;
+}
+
+.faq-question:hover {
+    background: #eaeaea;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background: #fafafa;
+    border-top: 1px solid #ddd;
+    border-radius: 0 0 4px 4px;
+    overflow-x: hidden;
+}
+
+.faq-toggle {
+    display: none;
+}
+
+.faq-toggle:checked + .faq-question + .faq-answer {
+    display: block;
+}
+
+.l {
+    font-size: 30px;
+    margin-top: 150px; 
+    text-align: center;
+    position: relative;
+    left: 290px;
+    max-width: 100%;
+    overflow: visible; 
+}
+
+.signin {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    position: relative;
+    left: 290px;
+}
+
+.signin button {
+    background-color: #003366;
+    color: white;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+
+.signin button:hover {
+    transform: translateY(1px);
+    background-color: #007799; 
+}
+
+.copyright {
+    background-color: #bb9679;
+    padding: 25px 650px;
+    width: 220px;
+    position: relative;
+    right: 10px;
+    top: 10px;
+    text-align: center;
+}
+
+.copyright ul {
+    display: flex;
+    list-style: none;
+    position: relative;
+    right: 70px;
+
+}
+
+.copyright li {
+    padding: 15px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .sidenav {
+        display: none;
+    }
+}
